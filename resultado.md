@@ -104,6 +104,16 @@ Comando: set payload payload/cmd/unix/interact
 
 &nbsp;
 
+Obs. Payload - Em cibersegurança, um payload é a parte maliciosa de um ataque cibernético que executa a ação prejudicial, como criptografar arquivos, roubar dados ou instalar um backdoor. Enquanto o "exploit" é o código que explora uma vulnerabilidade para entrar no sistema, o payload é a carga útil que causa o dano real uma vez que o ataque é executado. 
+
+O termo "payload" tem suas raízes na aviação e engenharia militar, onde originalmente se referia à carga útil de uma aeronave ou míssil — a parte do equipamento projetada para alcançar um objetivo específico, como transportar passageiros ou entregar explosivos.
+
+No contexto da cibersegurança, o termo foi adaptado para descrever a parte de um ataque cibernético que realiza a ação maliciosa, causando danos ao alvo.
+
+Pense no exploit como o arrombamento de uma porta e no payload como o que o ladrão faz depois de entrar. O exploit permite que o ataque entre, e o payload é a ação que ele executa.
+
+&nbsp;
+
 ### 12º - Acionamos o comando show options novamente para vermos o IP configurado e definido no host
 
 Comando: show options
@@ -131,10 +141,15 @@ Comando: ip addr
 ### 15º - Chegando até o arquivo flag.txt criado no metasploitable (Capture the flag) pelo terminal do Kali Linux.
 
 Comando: ls (encontramos a pasta home)
+
 Comando: cd home (entramos na pasta home)
+
 Comando: ls (encontramos a pasta msfadmin)
+
 Comando: cd msfadmin (entramos na pasta msfadmin)
+
 Comando: ls (encontramos o arquivo criado no metasploitable que foi nomeado como flag.txt)
+
 Comando: nano flag.txt (Abrimos e visualizamos o conteúdo do arquivo) 
 
 ![encontrando arquivo](https://i.imgur.com/rlXmxog.jpeg) 
@@ -142,3 +157,69 @@ Comando: nano flag.txt (Abrimos e visualizamos o conteúdo do arquivo)
 ![acessando arquivo](https://i.imgur.com/hfUMslV.jpeg)
 
 &nbsp;
+
+Obs. Na cibersegurança, o "shell" refere-se a uma interface para um sistema operacional, que pode ser usada tanto para fins legítimos (administração remota segura) quanto maliciosos (ataques). O uso mais comum é o Secure Shell (SSH), que protege a comunicação criptografando os dados. No entanto, o termo também é usado para descrever interfaces criadas por atacantes, como os web shells e reverse shells, que permitem acesso e controle sobre um sistema comprometido. 
+
+&nbsp; 
+
+Tipos de Shells e Como Funcionam:
+
+1. Bind Shell
+    
+O bind shell funciona ao “amarrar” um shell em uma porta específica do sistema alvo. O atacante conecta-se diretamente a essa porta para interagir com o sistema.
+
+Como Funciona: O sistema alvo inicia um serviço que aguarda conexões de entrada em uma porta específica. O atacante, então, conecta-se diretamente a essa porta para obter acesso.
+
+Vantagens: Simplicidade na configuração.
+
+Desvantagens: Requer que a porta esteja acessível, o que pode ser bloqueado por firewalls.
+
+2. Reverse Shell
+   
+No reverse shell, a conexão é iniciada pelo sistema alvo em direção ao atacante. É frequentemente usado para contornar firewalls e NATs.
+
+Como Funciona: O sistema alvo estabelece uma conexão de saída para o servidor do atacante, permitindo controle remoto.
+
+Vantagens: Funciona mesmo quando o sistema alvo está atrás de firewalls ou NATs.
+
+Desvantagens: Pode ser detectado por sistemas de monitoramento de tráfego.
+
+3. Web Shell
+
+Web shells são scripts ou arquivos maliciosos enviados para servidores web comprometidos. Eles permitem que um invasor execute comandos no servidor através de uma interface web.
+
+Como Funciona: Um arquivo, como PHP ou ASPX, é carregado no servidor e executado para oferecer uma interface de controle remoto.
+
+Vantagens: Flexível e pode ser acessado de qualquer navegador.
+
+Desvantagens: Requer um vetor de ataque inicial para carregar o script no servidor.
+
+&nbsp; 
+
+Como se Proteger Contra Uso Indevido de Shells
+
+Embora úteis para administradores de sistemas e profissionais de segurança, shells podem ser usados maliciosamente. Algumas práticas para proteger seus sistemas incluem:
+
+- Monitore Atividades de Rede: Use ferramentas de monitoramento para identificar conexões suspeitas.
+
+- Restrinja Permissões: Limite o acesso a sistemas e serviços sensíveis apenas a usuários autorizados.
+  
+- Atualize Software Regularmente: Mantenha servidores e aplicações atualizadas para corrigir vulnerabilidades exploráveis.
+  
+- Use Firewalls: Configure firewalls para bloquear portas não utilizadas e conexões não autorizadas.
+  
+- Implemente Whitelisting: Restrinja scripts e comandos que podem ser executados em seus servidores.
+
+  &nbsp;
+  
+Ferramentas Recomendadas para Shells
+Algumas ferramentas amplamente usadas para criação e detecção de shells incluem:
+
+- Netcat: Ferramenta básica para criar shells reversos e de ligação. Site oficial
+- Metasploit Framework: Oferece módulos para criação de shells personalizados. Site oficial
+- PowerSploit: Ferramenta avançada para criar shells PowerShell. Repositório no GitHub
+- PayloadAllTheThings: Repositório abrangente com exemplos e payloads para criação de shells e outros usos relacionados a segurança. Repositório no GitHub
+
+&nbsp; 
+
+Disclaimer: Esta lista é fornecida apenas para fins educativos e para uso em ambientes autorizados. Não utilize essas ferramentas para fins maliciosos ou ilegais.

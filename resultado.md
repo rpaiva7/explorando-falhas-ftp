@@ -1,5 +1,3 @@
-&nbsp; 
-
 ### 1º - Abrir e logar na VM do metasploitable com o login padrão.
 
 login: msfadmin

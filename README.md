@@ -17,4 +17,4 @@ Payloads (módulos) para exploit, sendo de três tipos:
 Meterpreter
 Ou Meta-interpreter, é um payload que funciona por injeção dll.
 O meterpreter reside inteiramente na memória do anfitrião e não
-deixa vestígios no disco rígido (o que o torna de difícil detecção nas técnias forenses).
+deixa vestígios no disco rígido (o que o torna de difícil detecção nas técnicas forenses).
